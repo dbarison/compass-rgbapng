@@ -7,11 +7,11 @@ $rgbapng_path: 'rgbapng';
 
 @mixin rgba-background($color, $dir:$rgbapng_path){
   background: $color;
-  :#background image_url(png_pixelate($color, $dir));
+  *background: image_url(png_pixelate($color, $dir));
 }
 
 @mixin rgba-background-inline($color){
   background: $color;
-  :#background png_base64($color);
+  *background: png_base64($color);
 }
 
